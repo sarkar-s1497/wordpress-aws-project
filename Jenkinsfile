@@ -21,7 +21,7 @@ pipeline {
             steps {
                 script {
                     // Stop and remove existing containers first
-                    sh 'docker-compose down' 
+                    sh 'docker-compose down -v --rmi all' 
             
                     // Then deploy the new stack
                     sh 'docker-compose up -d'
