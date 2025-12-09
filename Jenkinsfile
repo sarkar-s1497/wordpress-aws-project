@@ -5,7 +5,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git 'https://github.com/sarkar-s1497/wordpress-aws-project.git'
+                git branch: 'main', url: 'https://github.com/sarkar-s1497/wordpress-aws-project.git'
             }
         }
 
